@@ -16,8 +16,25 @@ body {
   width: 50rem;
 }
 
+@media (max-width: 667px) {
+  #calculator {
+    width: 90%;
+  }
+}
+
 #header {
   text-align: center;
+}
+
+#header img {
+  margin-top: 2rem;
+  width: 10rem;
+}
+
+@media (max-width: 667px) {
+  #header img {
+    width: 4rem;
+  }
 }
 
 #input {
@@ -48,6 +65,18 @@ body {
   color: white;
 }
 
+@media (max-width: 667px) {
+  #input {
+    grid-template-columns: 1fr;
+    padding: 1rem 0;
+    margin: 2rem 0;
+  }
+
+  .input-div {
+    padding: 1rem 2rem;
+  }
+}
+
 #output table {
   width: 100%;
   padding: 1rem;
@@ -61,6 +90,19 @@ body {
 .table-output-content th {
   padding: 0.5rem 0;
   text-align: end;
+}
+
+@media (max-width: 667px) {
+  #output table {
+    /* background-color: black; */
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+
+  .table-output-head th,
+  .table-output-content th {
+    text-align: center;
+  }
 }
 
 .error {
